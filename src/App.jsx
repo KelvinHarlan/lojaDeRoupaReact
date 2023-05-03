@@ -1,6 +1,7 @@
 import './App.css';
 import Nav from './components/navbar/Nav';
 import Product from './components/product/Product';
+import Filter from './components/product/Filter';
 
 
 
@@ -58,11 +59,13 @@ function App() {
   ]
 
 
+
   return (
     <>
       <header>
         <Nav />
       </header>
+      <Filter/>
       <main className='section-products'>
         <section className='products'>
           {productsArray.map((el) => (
